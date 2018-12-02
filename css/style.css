@@ -1,0 +1,82 @@
+*{margin:0;
+padding: 0;}
+
+ul{
+	list-style: none;
+}
+body{
+	font-family: "微軟雅黑";
+	color: #14191e;
+}
+.main{
+	width: 1200px;
+	height: 460px;
+	margin: 30px auto;
+	overflow: hidden;
+	position: relative;
+}
+.banner{
+	width: 1200px;
+	height: 460px;
+	overflow: hidden;
+	position: relative;
+}
+.banner-slide{
+	width: 1200px;
+	height: 460px;
+	background-repeat: no-repeat;
+	position: absolute;
+	display: none;
+}
+.slide-active{
+	display: block;
+}
+.slide1{
+	background-image: url('../img/bg1.jpg');
+}
+.slide2{
+	background-image: url('../img/bg2.jpg');
+}
+.slide3{
+	background-image: url('../img/bg3.jpg');
+}
+.button{
+	width: 40px;
+	height: 80px;
+	position: absolute;
+	left: 0px;
+	top: 50%;
+	margin-top: -40px;
+	background: url(../img/arrow.png) no-repeat center center;
+}
+.next{
+	left: auto;
+	right: 0;
+}
+.prev{
+	transform: rotate(180deg);
+}
+.button:hover{
+	background-color: rgba(7,17,7,0.8);
+}
+.dots{
+	position: absolute;
+	bottom: 0px;
+	left: 567px;
+	text-align: center;
+}
+.dots span{
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	background: rgba(7,17,27,0.4);
+	margin-bottom: 20px;
+	margin-left: 10px;
+	cursor: pointer;
+	box-shadow: 0 0 0 2px rgba(0,0,0,0.8) inset;
+}
+.dots span.active{
+	background: #fff;
+	box-shadow: 0 0 0 2px rgba(7,17,27,0.8) inset;
+}
